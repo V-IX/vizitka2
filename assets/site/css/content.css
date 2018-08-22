@@ -1,0 +1,161 @@
+.offer {
+	background: url('../img/bg-offer.jpg') no-repeat center;
+}
+
+.offer .wrapper {
+	height: 450px;
+	line-height: 450px;
+	text-align: right;
+}
+
+.offer .side {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 1;
+}
+
+.offer .title {
+	font-size: 48px;
+	font-weight: 700;
+	color: #496573;
+	letter-spacing: -1px;
+	line-height: 50px;
+	margin-bottom: 15px;
+}
+
+.offer .text {
+	font-size: 24px;
+	color: #496573;
+	line-height: 28px;
+	margin-bottom: 15px;
+}
+
+.offer .btn {
+	height: 56px;
+	line-height: 54px;
+	padding: 0 40px;
+	border-radius: 30px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+/* home */
+
+.home-sep {
+	position: absolute;
+	left: 630px; top: 0;
+	border-right: 1px solid #c4c4c4;
+	height: 100%;
+}
+
+.home-list {
+	line-height: 22px;
+	color: #565656;
+}
+
+.home-list > li {
+	padding-left: 55px;
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.home-list > li:last-child {margin-bottom: 0;}
+
+.home-list > li:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0; top: 0;
+	width: 29px;
+	height: 30px;
+	background: url('../img/home-list.png') no-repeat;
+}
+
+/* publications */
+
+.publications-list {}
+
+.publications-list > li {margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px solid #e4e4e4;}
+.publications-list > li:last-child {margin-bottom: 0; padding-bottom: 0; border-bottom: 0;}
+
+.publications-item {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+.publications-item .title {
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 30px;
+	margin-bottom: 10px;
+	letter-spacing: -1px;
+}
+
+.publications-item .brief {
+	line-height: 1.4;
+	color: #676565;
+}
+
+.publications-item:hover .title {
+	color: #009bd5;
+	text-decoration: underline;
+}
+
+.publications-item .img {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.publications-item .img img {
+	display: block;
+	width: 100%;
+	transition: all 1.5s ease 0s;
+}
+
+.publications-item:hover .img img {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* contancts */
+
+.map {
+	padding: 4px;
+	border: 1px solid #d8d8d8;
+}
+
+.map iframe {
+	display: block;
+}
+
+/* popup */
+
+.popup {
+	display: none;
+	position: relative;
+	width: 300px;
+	padding: 30px 35px;
+	background: #fff;
+	text-align: center;
+}
+
+.close {
+	position: absolute;
+	top: 15px; right: 15px;
+	width: 10px;
+	height: 11px;
+	background: url('../img/x.png') no-repeat;
+	opacity: 0.7;
+	transition: all 0.3s ease 0s;
+}
+
+.close:hover {
+	cursor: pointer;
+	opacity: 1;
+}

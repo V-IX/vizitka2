@@ -1,0 +1,26 @@
+/* reset */
+
+a {color: #006ed5;}
+
+::selection {background: #006ed5;}
+
+.btn {background: #006ed5;}
+.btn:hover {background: #115fa9;}
+
+.form-input:focus {border-color: #006ed5;}
+
+/* template */
+
+.header-open span {border-bottom: 1px solid #006ed5;}
+
+.tmenu-wrap {background: #006ed5;}
+
+.breadcrumbs {color: #006ed5;}
+
+.pagination a:hover {color: #006ed5;}
+
+.page-title._lined:after {border-top: 4px solid #006ed5;}
+
+/* content */
+
+.publications-item:hover .title {color: #006ed5;}

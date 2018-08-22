@@ -1,0 +1,368 @@
+.super-wrapper {
+	min-height: 100%;
+	padding-bottom: 150px;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 10px;
+}
+
+/* header */
+
+.header {
+	padding: 20px 0 25px;
+	text-align: center;
+}
+
+.logo-wrap {
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	color: inherit;
+	text-align: left;
+}
+
+.logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+.logo-descr {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	color: #565656;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.logo-title {
+	font-size: 24px;
+	font-weight: 700;
+	color: #1a1617;
+	letter-spacing: -1px;
+}
+
+.header-open {
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.header-open .fa {vertical-align: middle;}
+
+.header-open span {border-bottom: 1px solid #009bd5; transition: border-color 0.3s ease 0s;}
+.header-open:hover span {border-color: transparent;}
+
+.header-contacts {
+	display: inline-block;
+	text-align: left;
+	padding-top: 22px;
+	max-width: 380px;
+}
+
+.header-phones {
+	font-size: 0;
+	margin-bottom: 8px;
+}
+
+.header-phones > li {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: -1px;
+	margin-right: 15px;
+}
+
+.header-phones > li:last-child {margin-right: 0;}
+.header-phones span {color: #565656;}
+
+.header-phones > li:before {
+	content: "";
+	display: inline-block;
+	vertical-align: -1px;
+	margin-right: 8px;
+	height: 15px;
+}
+
+.header-phones > li._mts:before {width: 15px; background: url('../img/icons/mts.png') no-repeat center;}
+.header-phones > li._velcom:before {width: 17px; background: url('../img/icons/velcom.png') no-repeat center;}
+
+.header-adres {
+	font-weight: 700;
+}
+
+.header-adres:before {
+	content: "";
+	display: inline-block;
+	vertical-align: -1px;
+	margin-right: 5px;
+	width: 15px;
+	height: 15px;
+	background: url('../img/icons/map.png') no-repeat center;
+}
+
+.header-adres span {font-weight: 500; color: #565656;}
+
+/* tmenu */
+
+.tmenu-wrap {
+	background: #009bd5;
+	position: relative;
+	z-index: 10;
+}
+
+.tmenu {display: table; width: 100%;}
+.tmenu > ul {display: table-row;}
+.tmenu > ul > li {display: table-cell;}
+
+.tmenu .item {
+	position: relative;
+}
+
+.tmenu .item > a {
+	display: block;
+	padding: 18px 20px 17px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1;
+	font-weight: 700;
+	border-bottom: 3px solid transparent;
+	transition: border-color 0.3s ease 0s;
+}
+
+.tmenu .item:hover > a {border-color: #fff;}
+
+.tmenu .submenu {
+	display: none;
+	position: absolute;
+	top: 100%; left: 0;
+	margin-top: 10px;
+	background: #fff;
+	width: 200px;
+	min-width: 100%;
+	padding: 20px 0;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*.tmenu .item:hover .submenu {display: block;}*/
+
+.tmenu > ul > li:last-child .submenu {left: auto; right: 0;}
+
+.tmenu .submenu a {
+	display: block;
+	padding: 7px 35px;
+	text-decoration: none;
+}
+
+.tmenu .submenu a:hover {
+	text-decoration: underline;
+	font-weight: 500;
+}
+
+/* footer */
+
+.footer-wrapper {
+	background: #eee;
+	height: 150px;
+	margin-top: -150px;
+}
+
+.footer {
+	padding: 35px 0;
+	height: 150px;
+}
+
+.footer .developer {
+	position: relative;
+	display: inline-block;
+	text-align: left;
+	color: #565656;
+	text-decoration: none;
+	line-height: 18px;
+}
+
+.footer .developer:before {
+	content: "";
+	position: absolute;
+	left: -45px; top: 3px;
+	display: block;
+	width: 34px;
+	height: 32px;
+	background: url('../img/developer.png') no-repeat;
+}
+
+.footer .copyright {
+	line-height: 22px;
+}
+
+.footer .copyright a {
+	color: #565656;
+}
+
+.footer-adres {
+	color: #565656;
+	line-height: 18px;
+}
+
+/* breadcrumbs */
+
+.breadcrumbs {
+	padding: 15px 0 20px;
+	font-size: 14px;
+	color: #009bd5;
+}
+
+.breadcrumbs-in {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.breadcrumbs-sep {
+	margin: 0 3px;
+	color: #565656;
+}
+
+.breadcrumbs a {
+	color: #565656;
+	font-weight: 500;
+}
+
+/* pagination */
+
+.pagination {
+	margin-top: 40px;
+	color: #565656;
+}
+
+.pagination .num {
+	color: inherit;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.pagination a {margin: 0 5px;}
+.pagination a:hover {color: #009bd5;}
+
+.pagination .fa {
+	font-size: 12px;
+}
+
+.pagination span.num {
+	height: 25px;
+	line-height: 1;
+	padding: 5px 3px 4px;
+	min-width: 25px;
+	background: #e8e8e8;
+	font-weight: 700;
+	margin: 0 7px;
+	text-align: center;
+}
+
+/* content */
+
+.content {
+	padding-bottom: 50px;
+}
+
+.page-top {
+	margin-bottom: 30px;
+}
+
+.page-title {
+	font-size: 30px;
+	line-height: 34px;
+	font-weight: 700;
+	letter-spacing: -1px;
+}
+
+.page-title._lined:after {
+	content: "";
+	display: block;
+	width: 50px;
+	border-top: 4px solid #009bd5;
+	margin-top: 15px;
+}
+
+.page-descr {
+	margin-top: 15px;
+	line-height: 1.4;
+	color: #565656;
+}
+
+.page-brief {
+	margin-top: 15px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #565656;
+}
+
+/* only for demo */
+
+.colors-select {
+	position: fixed;
+	top: 50px; left: -200px;
+	z-index: 800;
+	transition: left 0.3s ease 0s;
+}
+
+.colors-select._open {left: 0;}
+
+.colors-select-toggle {
+	position: absolute;
+	top: 0; left: 100%;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	background: #6d6d6d;
+	line-height: 40px;
+	color: #fff;
+	font-size: 20px;
+	transition: background 0.3s ease 0s;
+}
+
+.colors-select-toggle:hover {background: #5d5d5d;}
+
+.colors-select-panel {
+	width: 200px;
+	padding: 15px 15px 5px;
+	background: #6d6d6d;
+}
+
+.colors-select-list {
+	
+}
+
+.colors-select-list > li {
+	float: left;
+	width: 50px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.colors-select-list > li:nth-child(3n+3) {margin-right: 0;}
+
+.colors-select-list > li > a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #909090;
+	transition: all 0.3s ease 0s;
+}
+
+.colors-select-list > li > a:hover {border-color: #b0b0b0;}
+.colors-select-list > li > a.current {border-color: #d0d0d0;}
+
+.colors-select-list > li > a._azure {background: #009bd5;}
+.colors-select-list > li > a._blue {background: #006ed5;}
+.colors-select-list > li > a._red {background: #d05029;}
+.colors-select-list > li > a._green {background: #65ab52;}
+.colors-select-list > li > a._orange {background: #ee7407;}
