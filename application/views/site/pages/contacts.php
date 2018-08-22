@@ -7,7 +7,7 @@
 				<?=htmlspecialchars_decode($siteinfo['map']);?>
 			</div>
 			<div class="row">
-				<div class="col-5">
+				<div class="col-5 top">
 					<div class="uppercase h4 bold mb15"><?=$pageinfo['title'];?></div>
 					<div class="text-dark text-editor">
 						<div class="mb10">По всем вопросам, связанными с работой центра,<br/>а также партнёрам обращаться по телефонам:</div>
@@ -24,7 +24,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-7">
+				<div class="col-7 bottom">
 					<div class="uppercase h4 bold mb15">Остались вопросы?</div>
 					<?=form_open('contacts/ajaxSend', array('data-toggle' => 'ajaxForm', 'class' => 'contacts-form'));?>
 						<div class="form-group row mb10">

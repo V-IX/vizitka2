@@ -3,11 +3,11 @@
 <div class="page">
 	<div class="wrapper">
 		<div class="row">
-			<div class="col-4">
+			<div class="col-4 top">
 				<h1 class="page-title _lined"><?=$pageinfo['title'];?></h1>
 				<div class="page-descr"><?=$pageinfo['brief']?></div>
 			</div>
-			<div class="col-8">
+			<div class="col-8 bottom">
 				<ul class="publications-list">
 				<? foreach($items as $item) { ?>
 					<li>

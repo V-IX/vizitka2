@@ -7,7 +7,7 @@
 	<title><?=$seo['title'];?></title>
 	<meta name="keywords" content="<?=$seo['keywords'];?>" />
 	<meta name="description" content="<?=$seo['description'];?>" />
-	<meta name="viewport" content="width=1000" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
 	<?=link_tag('assets/plugins/font-awesome/css/font-awesome.min.css');?>
 	<?=link_tag('assets/plugins/font-ubuntu/font.css');?>
@@ -46,12 +46,6 @@
 			</div>
 		</a>
 		</div>
-		<div class="right mt35">
-			<a href="javascript:void(0)" class="header-open" data-toggle="popup" data-task="Заказать звонок - шапка">
-				<?=fa('phone mr5');?>
-				<span>Заказать звонок</span>
-			</a>
-		</div>
 		<div class="header-contacts">
 			<ul class="header-phones">
 				<li class="phone _mts"><?=phone($siteinfo['phone'], $siteinfo['phoneMask']);?></li>
@@ -60,6 +54,18 @@
 			<div class="header-adres">
 				Где мы? <span class="ml5"><?=$siteinfo['adres'];?></span>
 			</div>
+		</div>
+		<div class="right mt35">
+			<a href="javascript:void(0)" class="header-open" data-toggle="popup" data-task="Заказать звонок - шапка">
+				<?=fa('phone mr5');?>
+				<span>Заказать звонок</span>
+			</a>
+		</div>
+		<div class="tmenu-btn">
+		  <a href="javascript:void(0)" class='tmenuBtn'>
+		        <?=fa('bars');?>
+		  </a>
+		  <a href="javascript:void(0)" class='tmenuBtn tmenuText'>Меню сайта</a>
 		</div>
 	</div>
 </div>
@@ -93,13 +99,16 @@
 	<div class="footer">
 		<div class="wrapper">
 			<div class="row">
-				<div class="col-4">
+				<div class="col-4 left">
 					<div class="copyright">
 						<?=date('Y');?> &copy; <?=$siteinfo['title'];?><br/>
 						<a href="<?=base_url('pages/confidence');?>">Политика конфиденциальности</a>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-4 text-right right">
+					<a href="http://narisuemvse.by" target="_blank" class="developer">Разработка и продвижение<br/><span class="link">Narisuemvse.by</span></a>
+				</div>
+				<div class="col-4 right">
 					<div class="footer-adres">
 						<div class="mb5"><?=$siteinfo['adres'];?></div>
 						<div class="mb5">
@@ -109,9 +118,6 @@
 						</div>
 						<div><a href="javascript:void(0)"><?=$siteinfo['email'];?></a></div>
 					</div>
-				</div>
-				<div class="col-4 text-right">
-					<a href="http://narisuemvse.by" target="_blank" class="developer">Разработка и продвижение<br/><span class="link">Narisuemvse.by</span></a>
 				</div>
 			</div>
 		</div>

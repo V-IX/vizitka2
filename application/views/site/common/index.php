@@ -11,13 +11,13 @@
 	<div class="wrapper">
 		<div class="row">
 		<? $advs = json_decode($siteinfo['offerAdv'], true); $advs = is_array($advs) ? $advs : array();?>
-			<div class="col-<?=!empty($advs) ? 7 : 12;?>">
+			<div class="col-<?=!empty($advs) ? 7 : 12;?> main1">
 				<div class="page-title mb30"><?=$pageinfo['title'];?></div>
 				<div class="text-editor"><?=$pageinfo['text'];?></div>
 			</div>
 			<? if(!empty($advs)) { ?>
-			<div class="col-1"></div>
-			<div class="col-4">
+			<div class="col-1 main2"></div>
+			<div class="col-4 main3">
 				<div class="page-title mb30">Наши преимущества</div>
 				<ul class="home-list">
 				<? foreach($advs as $adv) { ?>

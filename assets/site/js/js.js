@@ -8,4 +8,10 @@ $(document).ready(function(){
 		sub = el.find('.submenu');
 		sub.hide().css({'opacity': 0, 'margin-top': 10});
 	});
+    
+    $('.tmenu-btn').click(function(){
+        el = $('.tmenu') ;
+        if (el.hasClass('_open')) el.removeClass('_open');
+        else el.addClass('_open');
+    });
 });
